@@ -17,11 +17,11 @@ function getDate () {
     let day = date.getUTCDate();
     let month= date.getUTCMonth() + 1;
     let year = date.getFullYear();
-    let displayDate = `${month} / ${day} / ${year}`
+    let displayDate = `Today's Date: ${month} / ${day} / ${year}`
     let hours = date.getHours();
     let minutes = date.getMinutes();
-    let timestamp = ` ${hours}:${minutes}`;
-    let combo = `${displayDate} ${timestamp}`
+    let timestamp = ` Current Time: ${hours}:${minutes}`;
+    let combo = `${displayDate} <br>${timestamp}<br />`
     article.innerHTML = combo;
 
     button.textContent="Get Time & Date"
